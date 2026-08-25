@@ -3,9 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balady Cafe</title>
+
+    <meta
+        name="description"
+        content="Balady Cafe — a timeless Egyptian café experience in Sharm El Sheikh."
+    >
+
+    <title>Balady Cafe | Sharm El Sheikh</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+<header class="site-header" id="site-header">
+    <div class="nav-shell">
+
+        <a href="#home" class="brand">
+            <img
+                src="assets/images/logo.png"
+                alt="Balady Cafe"
+                class="brand-logo"
+            >
+        </a>
+
+        <nav class="desktop-nav">
+            <a href="#story">Our Story</a>
+            <a href="#experience">Experience</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#visit">Visit Us</a>
+        </nav>
+
+        <a href="#visit" class="nav-cta">
+            Get Directions
+        </a>
+
+        <button
+            class="menu-button"
+            id="menu-button"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <section class="hero" id="home">
+
+        <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+        >
+            <source
+                src="assets/video/balady-hero.mp4"
+                type="video/mp4"
+            >
+        </video>
+
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+        <div class="hero-grain"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-inner">
+
+                <p class="hero-location reveal">
+                    Sharm El Sheikh · Egypt
+                </p>
+
+                <h1 class="hero-title">
+                    <span class="reveal">Taste Egypt.</span>
+                    <em class="reveal">Feel the Story.</em>
+                </h1>
+
+                <p class="hero-copy reveal">
+                    Step into the warmth, memories and timeless
+                    spirit of Egyptian café culture.
+                </p>
+
+                <div class="hero-actions reveal">
+
+                    <a
+                        href="#story"
+                        class="btn btn-primary"
+                    >
+                        Discover Balady
+                        <span>↓</span>
+                    </a>
+
+                    <a
+                        href="#visit"
+                        class="btn btn-ghost"
+                    >
+                        Visit Us
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a
+            href="#story"
+            class="scroll-cue"
+            aria-label="Scroll down"
+        >
+            <span>Explore</span>
+            <i></i>
+        </a>
+
+    </section>
+
+
+    <section class="story-section" id="story">
+
+    <div class="story-shell">
+
+        <div class="story-copy">
+
+            <p class="section-kicker">
+                Our Story
+            </p>
+
+            <h2 class="story-title">
+                A café inspired by
+                <span>Egyptian memories.</span>
+            </h2>
+
+            <p class="story-text">
+                Balady is more than a place to sit and drink coffee.
+                It is a journey through Egyptian culture, old cinema,
+                timeless music and the warmth of traditional cafés.
+            </p>
+
+            <p class="story-text">
+                Every corner tells a story through vintage portraits,
+                wooden furniture, heritage details and a nostalgic
+                atmosphere designed to make every visit memorable.
+            </p>
+
+            <a href="#experience" class="story-link">
+                Discover the experience
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="story-visual">
+
+            <figure class="story-image story-image-main">
+                <img
+                    src="assets/images/story-main.webp"
+                    alt="Traditional Egyptian café interior"
+                    loading="lazy"
+                >
+            </figure>
+
+            <figure class="story-image story-image-small">
+                <img
+                    src="assets/images/story-detail.webp"
+                    alt="Vintage Egyptian café details"
+                    loading="lazy"
+                >
+            </figure>
+
+            <div class="story-stamp">
+                <span>Balady</span>
+                <small>Egyptian Heritage Café</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script src="js/main.js"></script>
+
 </body>
 </html>
