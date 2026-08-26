@@ -1,0 +1,527 @@
+/* Hero */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(24px);
+
+    animation:
+        reveal-up
+        850ms
+        cubic-bezier(.22, 1, .36, 1)
+        forwards;
+}
+
+.hero-location {
+    animation-delay: 180ms;
+}
+
+.hero-title span {
+    animation-delay: 330ms;
+}
+
+.hero-title em {
+    animation-delay: 460ms;
+}
+
+.hero-copy {
+    animation-delay: 610ms;
+}
+
+.hero-actions {
+    animation-delay: 750ms;
+}
+
+.hero-video {
+    animation:
+        hero-video
+        1.8s
+        cubic-bezier(.22, 1, .36, 1)
+        both;
+}
+
+@keyframes reveal-up {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(24px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+@keyframes hero-video {
+
+    from {
+        opacity: 0;
+
+        transform:
+            scale(1.07);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            scale(1.015);
+    }
+}
+
+
+/* Scroll Cue */
+
+.scroll-cue i {
+    animation:
+        cue-pulse
+        1.8s
+        ease-in-out
+        infinite;
+}
+
+@keyframes cue-pulse {
+
+    0%,
+    100% {
+        opacity: 0.35;
+
+        transform:
+            scaleX(0.35);
+    }
+
+    50% {
+        opacity: 1;
+
+        transform:
+            scaleX(1);
+    }
+}
+
+
+/* Mobile Menu */
+
+.mobile-nav.is-open {
+    animation:
+        menu-fade
+        280ms
+        ease
+        both;
+}
+
+.mobile-nav.is-open a {
+    opacity: 0;
+
+    transform:
+        translateY(18px);
+
+    animation:
+        menu-link
+        450ms
+        cubic-bezier(.22, 1, .36, 1)
+        forwards;
+}
+
+.mobile-nav.is-open a:nth-child(1) {
+    animation-delay: 70ms;
+}
+
+.mobile-nav.is-open a:nth-child(2) {
+    animation-delay: 120ms;
+}
+
+.mobile-nav.is-open a:nth-child(3) {
+    animation-delay: 170ms;
+}
+
+.mobile-nav.is-open a:nth-child(4) {
+    animation-delay: 220ms;
+}
+
+@keyframes menu-fade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-link {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* Story Images */
+
+.story-image-main {
+    animation:
+        story-main-float
+        7s
+        ease-in-out
+        infinite;
+}
+
+.story-image-small {
+    animation:
+        story-small-float
+        6s
+        ease-in-out
+        infinite;
+}
+
+.story-stamp {
+    animation:
+        stamp-float
+        6s
+        ease-in-out
+        infinite;
+}
+
+@keyframes story-main-float {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-8px);
+    }
+}
+
+@keyframes story-small-float {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(9px);
+    }
+}
+
+@keyframes stamp-float {
+
+    0%,
+    100% {
+        transform:
+            rotate(-7deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(-4deg)
+            translateY(-7px);
+    }
+}
+
+
+/* QR */
+
+@media (min-width: 1025px) {
+
+    .menu-qr-card {
+        animation:
+            qr-float
+            5s
+            ease-in-out
+            infinite;
+    }
+}
+
+@keyframes qr-float {
+
+    0%,
+    100% {
+        transform:
+            rotate(1.5deg)
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            rotate(1deg)
+            translateY(-9px);
+    }
+}
+
+
+/* Visit Card */
+
+.visit-card {
+    animation:
+        visit-card-float
+        5.5s
+        ease-in-out
+        infinite;
+}
+
+@keyframes visit-card-float {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-8px);
+    }
+}
+
+
+/* Scroll Reveals */
+
+@supports (animation-timeline: view()) {
+
+    .story-copy,
+    .experience-heading,
+    .menu-copy,
+    .visit-copy,
+    .social-inner {
+        animation:
+            scroll-content
+            linear both;
+
+        animation-timeline: view();
+
+        animation-range:
+            entry 10%
+            cover 35%;
+    }
+
+
+    .story-visual,
+    .menu-qr-card,
+    .visit-visual {
+        animation:
+            scroll-visual
+            linear both;
+
+        animation-timeline: view();
+
+        animation-range:
+            entry 5%
+            cover 35%;
+    }
+
+
+    .experience-card {
+        animation:
+            scroll-card
+            linear both;
+
+        animation-timeline: view();
+
+        animation-range:
+            entry 10%
+            cover 30%;
+    }
+
+
+    .experience-card:nth-child(2) {
+        animation-range:
+            entry 15%
+            cover 35%;
+    }
+
+
+    .experience-card:nth-child(3) {
+        animation-range:
+            entry 20%
+            cover 40%;
+    }
+
+
+    .footer-main {
+        animation:
+            footer-reveal
+            linear both;
+
+        animation-timeline: view();
+
+        animation-range:
+            entry 5%
+            cover 30%;
+    }
+}
+
+
+@keyframes scroll-content {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes scroll-visual {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(50px)
+            scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@keyframes scroll-card {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+@keyframes footer-reveal {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* Social Hover */
+
+.social-links svg,
+.footer-socials svg {
+    transition:
+        transform
+        300ms
+        cubic-bezier(.22, 1, .36, 1);
+}
+
+.social-links a:hover svg {
+    transform:
+        rotate(-6deg)
+        scale(1.12);
+}
+
+.footer-socials a:hover svg {
+    transform:
+        scale(1.12);
+}
+
+
+/* Image Hover */
+
+.story-image,
+.visit-map {
+    transition:
+        box-shadow
+        500ms ease;
+}
+
+.story-image:hover {
+    box-shadow:
+        0 38px 90px
+        rgba(68, 45, 25, 0.24);
+}
+
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-delay:
+            0ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            0.01ms !important;
+    }
+
+    .reveal {
+        opacity: 1;
+
+        transform: none;
+    }
+
+    .hero-video {
+        transform:
+            scale(1.015);
+    }
+}

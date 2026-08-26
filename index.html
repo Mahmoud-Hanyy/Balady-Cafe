@@ -1,202 +1,680 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
 
-    <meta
-        name="description"
-        content="Balady Cafe — a timeless Egyptian café experience in Sharm El Sheikh."
-    >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Balady Cafe | Sharm El Sheikh</title>
+  <meta name="description" content="Balady Cafe — a timeless Egyptian heritage café experience in Sharm El Sheikh." />
 
-    <link rel="stylesheet" href="css/style.css">
+  <meta name="theme-color" content="#17100b" />
+
+  <title>Balady Cafe | Sharm El Sheikh</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <link rel="apple-touch-icon" href="assets/images/logo.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/animations.css" />
 </head>
 
 <body>
 
-<header class="site-header" id="site-header">
+  <!-- Header -->
+  <header class="site-header" id="site-header">
     <div class="nav-shell">
 
-        <a href="#home" class="brand">
-            <img
-                src="assets/images/logo.png"
-                alt="Balady Cafe"
-                class="brand-logo"
-            >
-        </a>
+      <a href="#home" class="brand" aria-label="Balady Cafe home">
+        <img src="assets/images/logo.png" alt="Balady Cafe" class="brand-logo" />
+      </a>
 
-        <nav class="desktop-nav">
-            <a href="#story">Our Story</a>
-            <a href="#experience">Experience</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#visit">Visit Us</a>
-        </nav>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#story">Our Story</a>
+        <a href="#experience">Experience</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit Us</a>
+      </nav>
 
-        <a href="#visit" class="nav-cta">
-            Get Directions
-        </a>
+      <a href="https://maps.app.goo.gl/EaSBtoV6YePAR4ze6?g_st=aw" class="nav-cta" target="_blank"
+        rel="noopener noreferrer">
+        Get Directions
+      </a>
 
-        <button
-            class="menu-button"
-            id="menu-button"
-            type="button"
-            aria-label="Open menu"
-            aria-expanded="false"
-        >
-            <span></span>
-            <span></span>
-        </button>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false"
+        aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+      </button>
 
     </div>
-</header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#story">Our Story</a>
+      <a href="#experience">Experience</a>
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit Us</a>
+    </nav>
+  </header>
 
 
-<main>
+  <main>
 
+    <!-- Hero -->
     <section class="hero" id="home">
 
-        <video
-            class="hero-video"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-        >
-            <source
-                src="assets/video/balady-hero.mp4"
-                type="video/mp4"
-            >
-        </video>
+      <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+        <source src="assets/video/balady-hero.mp4" type="video/mp4" />
+      </video>
 
-        <div class="hero-overlay"></div>
-        <div class="hero-vignette"></div>
-        <div class="hero-grain"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-grain"></div>
 
-        <div class="hero-content">
+      <div class="hero-content">
+        <div class="hero-inner">
 
-            <div class="hero-inner">
+          <p class="hero-location reveal">
+            Sharm El Sheikh · Egypt
+          </p>
 
-                <p class="hero-location reveal">
-                    Sharm El Sheikh · Egypt
-                </p>
+          <h1 class="hero-title">
+            <span class="reveal">
+              Taste Egypt.
+            </span>
 
-                <h1 class="hero-title">
-                    <span class="reveal">Taste Egypt.</span>
-                    <em class="reveal">Feel the Story.</em>
-                </h1>
+            <em class="reveal">
+              Feel the Story.
+            </em>
+          </h1>
 
-                <p class="hero-copy reveal">
-                    Step into the warmth, memories and timeless
-                    spirit of Egyptian café culture.
-                </p>
+          <p class="hero-copy reveal">
+            Step into the warmth, memories and timeless spirit of
+            Egyptian café culture.
+          </p>
 
-                <div class="hero-actions reveal">
+          <div class="hero-actions reveal">
 
-                    <a
-                        href="#story"
-                        class="btn btn-primary"
-                    >
-                        Discover Balady
-                        <span>↓</span>
-                    </a>
+            <a href="#story" class="btn btn-primary">
+              Discover Balady
 
-                    <a
-                        href="#visit"
-                        class="btn btn-ghost"
-                    >
-                        Visit Us
-                        <span>↗</span>
-                    </a>
+              <span aria-hidden="true">
+                ↓
+              </span>
+            </a>
 
-                </div>
+            <a href="#visit" class="btn btn-ghost">
+              Visit Us
 
-            </div>
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </a>
+
+          </div>
 
         </div>
+      </div>
 
-        <a
-            href="#story"
-            class="scroll-cue"
-            aria-label="Scroll down"
-        >
-            <span>Explore</span>
-            <i></i>
-        </a>
+      <a href="#story" class="scroll-cue" aria-label="Discover Balady">
+        <span>Explore</span>
+        <i></i>
+      </a>
 
     </section>
 
 
+    <!-- Story -->
     <section class="story-section" id="story">
 
-    <div class="story-shell">
+      <div class="story-shell">
 
         <div class="story-copy">
 
-            <p class="section-kicker">
-                Our Story
-            </p>
+          <p class="section-kicker">
+            Our Story
+          </p>
 
-            <h2 class="story-title">
-                A café inspired by
-                <span>Egyptian memories.</span>
-            </h2>
+          <h2 class="story-title">
+            A café inspired by
 
-            <p class="story-text">
-                Balady is more than a place to sit and drink coffee.
-                It is a journey through Egyptian culture, old cinema,
-                timeless music and the warmth of traditional cafés.
-            </p>
+            <span>
+              Egyptian memories.
+            </span>
+          </h2>
 
-            <p class="story-text">
-                Every corner tells a story through vintage portraits,
-                wooden furniture, heritage details and a nostalgic
-                atmosphere designed to make every visit memorable.
-            </p>
+          <p class="story-text">
+            Balady is more than a place to sit and drink coffee.
+            It is a journey through Egyptian culture, old cinema,
+            timeless music and the warmth of traditional cafés.
+          </p>
 
-            <a href="#experience" class="story-link">
-                Discover the experience
-                <span>→</span>
-            </a>
+          <p class="story-text">
+            Every corner tells a story through vintage portraits,
+            wooden furniture, heritage details and a nostalgic
+            atmosphere designed to make every visit memorable.
+          </p>
+
+          <a href="#experience" class="story-link">
+            Discover the experience
+
+            <span aria-hidden="true">
+              →
+            </span>
+          </a>
 
         </div>
 
 
         <div class="story-visual">
 
-            <figure class="story-image story-image-main">
-                <img
-                    src="assets/images/story-main.webp"
-                    alt="Traditional Egyptian café interior"
-                    loading="lazy"
-                >
-            </figure>
+          <figure class="story-image story-image-main">
+            <img src="assets/images/cafe1.jpeg" alt="Traditional Egyptian café interior" loading="lazy" />
+          </figure>
 
-            <figure class="story-image story-image-small">
-                <img
-                    src="assets/images/story-detail.webp"
-                    alt="Vintage Egyptian café details"
-                    loading="lazy"
-                >
-            </figure>
+          <figure class="story-image story-image-small">
+            <img src="assets/images/cafe2.jpeg" alt="Vintage Egyptian café details" loading="lazy" />
+          </figure>
 
-            <div class="story-stamp">
-                <span>Balady</span>
-                <small>Egyptian Heritage Café</small>
-            </div>
+          <div class="story-stamp">
+            <span>Balady</span>
+            <small>Egyptian Heritage Café</small>
+          </div>
 
         </div>
 
+      </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section class="experience-section" id="experience">
+
+      <div class="experience-shell">
+
+        <div class="experience-heading">
+
+          <p class="section-kicker">
+            The Experience
+          </p>
+
+          <h2>
+            Egypt,
+
+            <span>
+              felt in every detail.
+            </span>
+          </h2>
+
+        </div>
+
+
+        <div class="experience-grid">
+
+          <article class="experience-card">
+
+            <span class="experience-number">
+              01
+            </span>
+
+            <h3>
+              Heritage Atmosphere
+            </h3>
+
+            <p>
+              Vintage portraits, warm lighting, wooden furniture
+              and authentic Egyptian details bring old memories
+              back to life.
+            </p>
+
+          </article>
+
+
+          <article class="experience-card">
+
+            <span class="experience-number">
+              02
+            </span>
+
+            <h3>
+              Egyptian Flavors
+            </h3>
+
+            <p>
+              Traditional coffee, tea and familiar flavors served
+              in an atmosphere inspired by timeless Egyptian cafés.
+            </p>
+
+          </article>
+
+
+          <article class="experience-card">
+
+            <span class="experience-number">
+              03
+            </span>
+
+            <h3>
+              Music & Memories
+            </h3>
+
+            <p>
+              A nostalgic setting inspired by Egyptian cinema,
+              music and the cultural icons that shaped generations.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+
+      <div class="menu-shell">
+
+        <div class="menu-copy">
+
+          <p class="section-kicker">
+            Our Menu
+          </p>
+
+          <h2>
+            Find your
+
+            <span>
+              Balady favorite.
+            </span>
+          </h2>
+
+          <p>
+            Explore our drinks, coffee and café selections.
+            Scan the QR code or open the menu directly
+            from your phone.
+          </p>
+
+          <a href="https://balady-cafe.foodics.online/menu/-318382" class="btn menu-button-link" target="_blank"
+            rel="noopener noreferrer">
+            View Full Menu
+
+            <span aria-hidden="true">
+              ↗
+            </span>
+          </a>
+
+        </div>
+
+
+        <div class="menu-qr-card">
+
+          <div class="qr-frame">
+            <img src="assets/images/menu.jpeg" alt="Scan to view the Balady Cafe menu" loading="lazy" />
+          </div>
+
+          <div class="qr-content">
+            <span>Scan to explore</span>
+
+            <strong>
+              Our Menu
+            </strong>
+
+            <p>
+              Point your camera at the QR code
+              to open the Balady menu.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Visit -->
+    <section class="visit-section" id="visit">
+
+      <div class="visit-shell">
+
+        <div class="visit-copy">
+
+          <p class="section-kicker">
+            Visit Balady
+          </p>
+
+          <h2>
+            Come for the coffee.
+
+            <span>
+              Stay for the story.
+            </span>
+          </h2>
+
+          <p class="visit-intro">
+            Experience Balady in the heart of Sharm El Sheikh.
+          </p>
+
+
+          <div class="visit-details">
+
+            <div class="visit-detail">
+
+              <span>
+                Location
+              </span>
+
+              <p>
+                Block 27 &amp; 28,<br />
+                Hadekat Al Hayawan Street,<br />
+                Cleopatra Mall,<br />
+                Sharm El Sheikh
+              </p>
+
+            </div>
+
+            <div class="visit-detail">
+
+              <span>
+                Opening Hours
+              </span>
+
+              <p>
+                Daily
+                <br />
+                Opening hours coming soon
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="visit-actions">
+
+            <a href="https://maps.app.goo.gl/EaSBtoV6YePAR4ze6?g_st=aw" target="_blank" rel="noopener noreferrer"
+              class="btn visit-primary">
+              Get Directions
+
+              <span aria-hidden="true">
+                ↗
+              </span>
+            </a>
+
+            <a href="#home" class="visit-secondary">
+              Back to top ↑
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="visit-visual">
+
+          <div class="visit-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.627739130982!2d34.30279780000001!3d27.882703499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1453492c233a1301%3A0x772f29b98a10455e!2z2YLZh9mI2Ycg2KjZhNiv2Yo!5e0!3m2!1sen!2seg!4v1787737317384!5m2!1sen!2seg"
+              title="Balady Cafe location in Sharm El Sheikh" loading="lazy" allowfullscreen
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+
+          <div class="visit-card">
+            <span>Sharm El Sheikh</span>
+
+            <strong>
+              Balady Cafe
+            </strong>
+
+            <small>
+              Egyptian Heritage · Coffee · Memories
+            </small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Social -->
+    <section class="social-section">
+
+      <div class="social-inner">
+
+        <p>
+          Follow the story
+        </p>
+
+        <h2>
+          Stay close to
+
+          <span>
+            Balady.
+          </span>
+        </h2>
+
+        <p class="social-copy">
+          Follow Balady Cafe for moments, music,
+          Egyptian memories and everything happening
+          at the café.
+        </p>
+
+
+        <div class="social-links">
+
+          <a href="https://www.instagram.com/balady.cafe?igsi=MTB5dW5nMXdyMGR1dA==" target="_blank"
+            rel="noopener noreferrer" aria-label="Follow Balady Cafe on Instagram">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+
+              <circle cx="12" cy="12" r="4"></circle>
+
+              <circle cx="17.5" cy="6.5" r="1" class="social-icon-fill"></circle>
+            </svg>
+
+            <span class="social-name">
+              Instagram
+            </span>
+
+            <span class="social-arrow" aria-hidden="true">
+              ↗
+            </span>
+
+          </a>
+
+
+          <a href="https://www.facebook.com/share/1BnWgUwWyb/" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow Balady Cafe on Facebook">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3.5l.5-4H13V9c0-.7.3-1 1-1Z" class="social-icon-fill">
+              </path>
+            </svg>
+
+            <span class="social-name">
+              Facebook
+            </span>
+
+            <span class="social-arrow" aria-hidden="true">
+              ↗
+            </span>
+
+          </a>
+
+
+          <a href="https://www.tiktok.com/@balady.cafe?_r=1&_t=ZS-99Bkp4zJVXM" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow Balady Cafe on TikTok">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14 3v11.2a4.2 4.2 0 1 1-3.6-4.15v3.45a1.4 1.4 0 1 0 .8 1.26V3h2.8Zm0 0c.5 2.8 2.1 4.4 5 5v3.2c-2.1-.2-3.7-.9-5-2Z"
+                class="social-icon-fill"></path>
+            </svg>
+
+            <span class="social-name">
+              TikTok
+            </span>
+
+            <span class="social-arrow" aria-hidden="true">
+              ↗
+            </span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+
+    <div class="footer-shell">
+
+      <div class="footer-main">
+
+        <div class="footer-brand-column">
+
+          <a href="#home" class="footer-brand" aria-label="Balady Cafe home">
+            <img src="assets/images/logo.png" alt="Balady Cafe" />
+          </a>
+
+          <p>
+            A nostalgic Egyptian café experience
+            celebrating heritage, coffee, music and memories
+            in Sharm El Sheikh.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <span class="footer-label">
+            Explore
+          </span>
+
+          <nav class="footer-links">
+            <a href="#story">Our Story</a>
+            <a href="#experience">Experience</a>
+            <a href="#menu">Menu</a>
+            <a href="#visit">Visit Us</a>
+          </nav>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <span class="footer-label">
+            Follow Balady
+          </span>
+
+          <div class="footer-socials">
+
+            <a href="https://www.instagram.com/balady.cafe?igsi=MTB5dW5nMXdyMGR1dA==" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1" class="social-icon-fill"></circle>
+              </svg>
+
+              Instagram
+            </a>
+
+
+            <a href="https://www.facebook.com/share/1BnWgUwWyb/" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3.5l.5-4H13V9c0-.7.3-1 1-1Z" class="social-icon-fill">
+                </path>
+              </svg>
+
+              Facebook
+            </a>
+
+
+            <a href="https://www.tiktok.com/@balady.cafe?_r=1&_t=ZS-99Bkp4zJVXM" target="_blank"
+              rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 3v11.2a4.2 4.2 0 1 1-3.6-4.15v3.45a1.4 1.4 0 1 0 .8 1.26V3h2.8Zm0 0c.5 2.8 2.1 4.4 5 5v3.2c-2.1-.2-3.7-.9-5-2Z"
+                  class="social-icon-fill"></path>
+              </svg>
+
+              TikTok
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="footer-column footer-visit">
+
+          <span class="footer-label">
+            Find Us
+          </span>
+
+          <p>
+            Block 27 &amp; 28<br />
+            Hadekat Al Hayawan Street<br />
+            Cleopatra Mall<br />
+            Sharm El Sheikh
+          </p>
+
+          <a href="https://maps.app.goo.gl/EaSBtoV6YePAR4ze6?g_st=aw" target="_blank" rel="noopener noreferrer"
+            class="footer-direction">
+            Get Directions
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-divider"></div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="current-year"></span> Balady Cafe
+        </span>
+
+        <span>
+          Egyptian Heritage · Sharm El Sheikh
+        </span>
+
+        <a href="#home">
+          Back to top ↑
+        </a>
+
+      </div>
+
     </div>
 
-</section>
-
-</main>
+  </footer>
 
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
+
 </html>
